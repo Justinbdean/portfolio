@@ -130,6 +130,30 @@ p {
 
 /* images */
 
+.tool1 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.tool2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.tool3 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+}
 .gallery {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
