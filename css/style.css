@@ -130,30 +130,6 @@ p {
 
 /* images */
 
-.tool1 {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.tool2 {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.tool3 {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.video {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-
-}
 .gallery {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -165,12 +141,120 @@ p {
     padding-right: 1em;
 }
 
+.gallery_tool {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 98%;
+    max-width: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.gallery_ue {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    width: 98%;
+    max-width: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+}
+
+.gallery_ue2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    width: 98%;
+    max-width: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+}
+
+
+.gallery_vp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 98%;
+    max-width: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+}
+
+.gallery_flower {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 98%;
+    max-width: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+}
+
+.gallery_wine {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 98%;
+    max-width: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+}
+
 .gallery__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 } 
+
+.tool1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.tool2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.tool3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+}
+
 
 .overlay {
     position: absolute;
