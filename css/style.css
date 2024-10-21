@@ -144,7 +144,7 @@ p {
 .gallery_tool {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 10px;
     width: 98%;
     max-width: none;
@@ -221,38 +221,42 @@ p {
 } 
 
 .tool1 {
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
     grid-row-start: 1;
-    grid-row-end: 2;
-    position: relative;
-    overflow: hidden;
+    grid-row-end: 1;
+    display: flex;
+    justify-content: self;
+    padding: 2rem;
 }
 
 .tool2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
     display: flex;
     justify-content: center;
     padding: 2rem;
 }
 
-.tool3 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    position: relative;
-    overflow: hidden;
+.tool_vid_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool_vid {
+    position:relative;
+    justify-content: center;
+    width: 75%;
+    
 }
 
 .video {
     display: flex;
     justify-content: center;
     padding: 2rem;
-
 }
 
 
